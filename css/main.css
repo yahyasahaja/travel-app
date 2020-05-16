@@ -1,0 +1,10 @@
+body {
+  background: #34495e;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+* {
+  box-sizing: border-box;
+}
