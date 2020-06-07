@@ -37,7 +37,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vuelidate'],
+  plugins: ['~/plugins/vuelidate', '~/plugins/tailwind'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -46,7 +46,8 @@ module.exports = {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    '@nuxtjs/tailwindcss'
   ],
   /*
    ** Nuxt.js modules
@@ -82,6 +83,13 @@ module.exports = {
           success: colors.green.accent3
         }
       }
+    },
+    defaultAssets: {
+      font: true,
+      icons: 'md'
+    },
+    icons: {
+      iconfont: 'md' // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
     }
   },
   /*
