@@ -10,17 +10,20 @@
 
     <Filters />
     <BlogPost />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Filters from '~/components/Home/Filters'
 import BlogPost from '~/components/Home/BlogPost'
+import Footer from '~/components/Home/Footer'
 
 export default {
   components: {
     Filters,
-    BlogPost
+    BlogPost,
+    Footer
   }
 }
 </script>
