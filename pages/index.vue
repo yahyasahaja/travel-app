@@ -1,29 +1,24 @@
 <template>
   <div class="home-container">
-    <div class="bg-white">
-      <div class="flex align-center justify-between container px-4 mx-auto">
-        <h1 class="text-lg font-bold">Travel</h1>
-        <!-- eslint-disable-next-line -->
-        <v-btn rounded outlined type="submit" link color="primary" to="/login">Login</v-btn>
-      </div>
-    </div>
-
-    <Filters />
+    <HeaderMenu />
+    <SearchForm />
     <BlogPost />
     <Footer />
   </div>
 </template>
 
 <script>
-import Filters from '~/components/Home/Filters'
+import SearchForm from '~/components/Home/SearchForm'
 import BlogPost from '~/components/Home/BlogPost'
-import Footer from '~/components/Home/Footer'
+import Footer from '~/components/shared/Footer'
+import HeaderMenu from '~/components/shared/HeaderMenu'
 
 export default {
   components: {
-    Filters,
+    SearchForm,
     BlogPost,
-    Footer
+    Footer,
+    HeaderMenu
   }
 }
 </script>

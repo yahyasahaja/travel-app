@@ -68,7 +68,7 @@
         </div>
       </div>
     </div>
-    <v-btn block type="submit" color="primary" link to="/login">Search</v-btn>
+    <v-btn block type="submit" color="primary" link to="/search">Search</v-btn>
   </div>
 </template>
 
